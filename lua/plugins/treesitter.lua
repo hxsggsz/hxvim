@@ -6,6 +6,12 @@ return {
     opts = {
       ensure_installed = {
         "astro",
+        "css",
+        "dockerfile",
+        "jsdoc",
+        "tsx",
+        "typescript",
+        "javascript",
         "cmake",
         "cpp",
         "css",
@@ -24,9 +30,12 @@ return {
         "svelte",
       },
 
-      -- matchup = {
-      -- 	enable = true,
-      -- },
+      matchup = {
+      	enable = true,
+      },
+
+      highlight = { enable = true},
+      indent = { enable = true},
 
       -- https://github.com/nvim-treesitter/playground#query-linter
       query_linter = {
@@ -57,6 +66,7 @@ return {
     config = function(_, opts)
       require("nvim-treesitter.configs").setup(opts)
 
+      
       -- MDX
       vim.filetype.add({
         extension = {
