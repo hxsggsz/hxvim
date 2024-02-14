@@ -5,7 +5,6 @@ vim.cmd("set shiftwidth=2")
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
-
 -- Enable the sign column to prevent the screen from jumping
 vim.opt.signcolumn = "yes"
 
