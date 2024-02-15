@@ -31,11 +31,11 @@ return {
       },
 
       matchup = {
-      	enable = true,
+        enable = true,
       },
 
-      highlight = { enable = true},
-      indent = { enable = true},
+      highlight = { enable = true },
+      indent = { enable = true },
 
       -- https://github.com/nvim-treesitter/playground#query-linter
       query_linter = {
@@ -47,7 +47,7 @@ return {
       playground = {
         enable = true,
         disable = {},
-        updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
+        updatetime = 25,    -- Debounced time for highlighting nodes in the playground from source code
         persist_queries = true, -- Whether the query persists across vim sessions
         keybindings = {
           toggle_query_editor = "o",
@@ -66,7 +66,6 @@ return {
     config = function(_, opts)
       require("nvim-treesitter.configs").setup(opts)
 
-      
       -- MDX
       vim.filetype.add({
         extension = {
